@@ -1,0 +1,12 @@
+mongo:
+  # Example: mongodb://username:password@localhost:27017/?authSource=admin
+  uri: ""
+  database: "Test"
+  collection: "Test"
+
+query:
+  
+  player-name-field: "ign"
+
+display:
+  max-results: 10
