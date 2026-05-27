@@ -2,7 +2,7 @@ name: PunishmentInfo
 version: ${project.version}
 main: com.example.punishmentinfo.PunishmentInfoPlugin
 api-version: '1.21'
-author: Codex
+author: RTM
 description: Lets OPs run /info <name> to view punishment history from MongoDB.
 commands:
   info:
