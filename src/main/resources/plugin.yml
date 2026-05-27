@@ -1,0 +1,32 @@
+name: PunishmentInfo
+version: ${project.version}
+main: com.example.punishmentinfo.PunishmentInfoPlugin
+api-version: '1.21'
+author: Codex
+description: Lets OPs run /info <name> to view punishment history from MongoDB.
+commands:
+  info:
+    description: Show a player's past punishments from MongoDB.
+    usage: /info <name>
+  addmute:
+    description: Add one mute to a player's MongoDB punishment count.
+    usage: /addmute <name>
+  addban:
+    description: Add one ban to a player's MongoDB punishment count.
+    usage: /addban <name>
+  resetpunishments:
+    description: Reset a player's mute and ban counts in MongoDB.
+    usage: /resetpunishments <name>
+  punishstats:
+    description: Show aggregate punishment stats from MongoDB.
+    usage: /punishstats
+permissions:
+  punishmentinfo.info:
+    description: Allows using /info <name>.
+    default: op
+  punishmentinfo.manage:
+    description: Allows editing MongoDB punishment counts.
+    default: op
+  punishmentinfo.stats:
+    description: Allows viewing aggregate MongoDB punishment stats.
+    default: op
